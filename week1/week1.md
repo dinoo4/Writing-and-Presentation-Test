@@ -269,3 +269,157 @@ DISPLAY "area"
 - Conditional : digunakan saat dibutuhkan percabangan kasus. Komputer akan melakukan suatu tindakan jika suatu kondisi terpenuhi.
 - Looping : Jika membutuhkan perulangan dalam kasus tertentu, kita bisa menggunakan Looping.
 - Recursive : pola pikir dalam algoritma yang memanggil method/function didalam sebuah function.
+
+# JAVASCRIPT Dasar
+
+---
+
+#### Javascript
+
+<p> Javascript adalah bahasa pemrograman yang sangat powerful yang digunakan untuk logic sebuah website. Javascript juga membuat sebuah website menjadi interaktif dan dinamis.</p>
+<p>Cara untuk menjalankan javascript adalah melalui browser. google chrome adalah yang sering digunakan.</p>
+
+#### Tipe data pada javascript
+
+- Number : tipe data yang mengandung semua jenis angka
+- String : tipe data yang berisi teks, terdiri dari huruf,angka,spasi , simbol
+- boolean : memiliki nilai true or false
+- null : tipe data pada variabel/data yang tidak memiliki nilai
+- undefined : tipe data yang merepresentasikan varibel/data yang tidak memiliki nilai
+- object : tipe data yg dapat berisi berbagai nilai dan berhubungan dengan dunia nyata
+- array : salah satu tipe data terstruktur (structured data type) yang terdiri dari sejumlah komponen-komponen yang mempunyai tipe data yang sama
+
+#### Variabel
+
+<p>Variabel merupakan container atau  wadah yang digunakan untuk menyimpan data atau nilai. Di javascript ada 3 cara untuk mendeklarasikan variabel : </p>
+
+- menggunakan let
+- menggunakan var
+- menggunakan const
+
+#### Operator
+
+<p>Operator adalah simbol yang digunakan untuk melakukan operasi pada suatu nilai dan variabel.</p>
+
+#### Jenis operator
+
+- operator aritmatika
+  <p>operator ini terdiri dari :
+
+  - penjumlahan +
+  - pengurangan -
+  - perkalian \*
+  - pembagian /
+  - pemangkatan \*\*
+  - sisa bagi atau modulus %
+  </p>
+
+- operator penugasan / assignment
+  <p>Operator penugasan adalah operator yang digunakan untuk memberikan tugas kepada variabel. Biasanya digunakan untuk mengisi variabel. macam macam operator penugasan :
+
+  - pengisian nilai =
+  - pengisian dan penambahan +=
+  - pengisian dan pengurangan -=
+  - pengisian dan perkalian \*=
+  - pengisian dan pemangkatan \*\*=
+  - pengisian dan pembagian /=
+  - pengisian dan sisa bagi %=
+  </p>
+
+- operator perbandingan
+  <p>Operator relasi atau perbandingan adalah operator yang digunakan untuk membandingkan dua nilai. macam macam operator perbandingan :
+
+  - lebih besar >
+  - lebih kecil <
+  - sama dengan == atau ===
+  - tidak sama dengan != atau !==
+  - lebih besar sama dengan >=
+  - lebih kecil sama dengan <
+  </p>
+
+- operator logika
+  <p>Operator logika digunakan untuk melakukan operasi terhadap dua nilai boolean
+
+  - logika AND &&
+  - logika OR ||
+  - negasi atau kebalikan !
+  </p>
+
+  #### Conditional
+
+  <p>Conditional merupakan statement percabangan yang menggabarkan suatu kondisi, Conditional statement akan melakukan pengecekan pada kondisi fisik dan menjalankan perintah berdasarkan kondisi tersebut</p>
+
+- IF Conditional
+  <p>Percabangan if merupakan percabangan yang hanya memiliki satu blok pilihan saat kondisi bernilai benar.</p>
+
+```html
+Contoh IF conditional : if (true) { console.log('selamat pagi') } jika hasil nya
+true maka akan menampilkan output selamat pagi
+```
+
+- ELSE/IF Conditional
+<p>Percabangan if/else merupakan percabangan yang memiliki dua blok pilihan. Pilihan pertama untuk kondisi benar, dan pilihan kedua untuk kondisi salah (else).</p>
+
+```html
+contoh else/if conditional let perut = 'kenyang' if (perut === 'kenyang') {
+console.log('sudah kenyang') } else if (perut === 'lapar') { console.log('perut
+lapar') } jika kenyang , output yang akan tampil adalah sudah kenyang. jika
+lapar , output yang akan tampil adalah perut lapar.
+```
+
+- IF ELSE IF Conditional
+<p>Percabangan if/else/if merupakan percabangan yang memiliki lebih dari dua blok pilihan.</p>
+
+```html
+let perut = 'bingung' if (perut === 'kenyang') { console.log('sudah kenyang') }
+else if (perut === 'lapar') { console.log('perut lapar') } else {
+console.log('tidak mau makan') } jika kenyang , output yang akan tampil adalah
+sudah kenyang. jika lapar , output yang akan tampil adalah perut lapar. jika
+pilihan selain kenyang atau lapar , output adalah tidak mau makan
+```
+
+- Swith case
+<p>Percabangan switch/case adalah bentuk lain dari percabangan if/else/if.</p>
+
+```html
+let warna = "merah"; switch (warna){ case "merah": console.log ("warna merah");
+break; case "kuning": console.log ("warna kuning"); break; case "hijau":
+console.log ("warna hijau"); break; default: console.log ("warna tidak
+ditemukan"); } output yang keluar adalah sesuai pilihan, jika pilihan tidak ada
+maka output yang keluar adalah warna tidak ditemukan
+```
+
+- Ternary operator
+<p>Percabangan menggunakan opreator ternary merupakan bentuk lain dari percabangan if/else. bisa disebut bentuk singkat dari if/else</p>
+
+```html
+let makan = true makan ? console.log('sudah kenyang') : console.log('lapar');
+jika nilai nya true maka outputnya adalah sudah kenyang, jika false outputnya
+lapar.
+```
+
+#### Looping
+
+<p>looping adalah sebuah statement yang mengulang sebuah intruksi hingga kondisi terpenuhi atau jika kondisi stop/berhenti tercapai.</p>
+
+- For loop
+<p>Perulangan for merupakan perulangan yang termasuk dalam couted loop, karena sudah jelas berapa kali ia akan mengulang.</p>
+
+```html
+let nilai = 1 ; for (nilai; nilai <= 10 ; nilai++){ console.log(nilai) }
+outputnya adalah tampilan angka 1 sampai 10
+```
+
+- While loop
+<p>Perulangan while merupakan perulangan yang termasuk dalam perulangan uncounted loop.</p>
+
+```html
+let count = 1 ; while (count < 10){ console.log(count); count ++ ; }
+```
+
+- Do While loop
+<p>Perulangan do/while akan melakukan perulangan sebanyak 1 kali terlebih dahulu, lalu mengecek kondisi yang ada di dalam kurung while.</p>
+
+```html
+count = 1 ; do { console.log(count); count ++ ; } while (count <= 10)
+```
