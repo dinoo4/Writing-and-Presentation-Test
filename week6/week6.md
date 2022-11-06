@@ -10,8 +10,6 @@ Relasi database merupakan hubungan antara beberapa tabel yang ada di dalam sebua
 
 #### Tipe data MySQL
 
-Tipe data string
-
 ```sql
 
 Tipe data string
